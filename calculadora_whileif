@@ -1,0 +1,28 @@
+#essa linha da operação input é para escolher qual operação ele quer calcular
+
+operaçao= input("digite a operação soma,multiplicação,divisão,adição digite sair para encerrar")
+
+# dentro do while laço de repetição tem se a operação for igual a sair é falso mas se for esse forma != 
+#quer dizer que a operação esta correta.
+#dentro do while tem para digitar um numero e o segundo numero e vai fazer as  operações dentro do while
+#como os tipos de operação: soma,adição,multiplicação, adição,divisão
+#else seria que esta errado
+#eo print resultado da operação é aonde vai mostrar o resultado 
+# e essa linha ele vai pedir para o usuario se ele quiser escolher uma nova operação "operaçao= input("digite a operação soma,multiplicação,divisão,adição")"
+
+while operaçao != "sair":
+    numero1=int(input("digite um numero"))
+    numero2=int(input("digite um numero"))
+    if operaçao =="soma":
+       resultado= numero1 + numero2
+    elif operaçao =="adição":
+       resultado= numero1 - numero2 
+    elif operaçao == "multiplicação":
+       resultado= numero1 * numero2
+    elif operaçao =="divisão":
+       resultado = numero1 / numero2 
+    else:
+      print("o resultado não suporta a soma,multiplicação,divisão,adição ")
+
+    print("o resultado da operação é:"+ str(resultado))
+    operaçao= input("digite a operação soma,multiplicação,divisão,adição")
